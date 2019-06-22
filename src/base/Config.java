@@ -18,6 +18,7 @@ import utils.WedFunction;
 	 driver= new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get(url);
+	System.out.println("testing successful");
 	
 	//driver.close();
 }
