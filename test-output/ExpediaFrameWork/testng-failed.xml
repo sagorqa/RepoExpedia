@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ExpediaFrameWork]" parallel="tests">
+  <parameter name="url" value="https://www.expedia.com/"/>
+  <parameter name="Browser" value="Chrome"/>
+  <test name="ExpediaSignup">
+    <parameter name="url" value="https://www.expedia.com/"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="testCase.ExpediaSignup"/>
+    </classes>
+  </test> <!-- ExpediaSignup -->
+  <test name="ExpediaSignup(failed)" parallel="tests">
+    <parameter name="url" value="https://www.expedia.com/"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="testCase.ExpediaSignup">
+        <methods>
+          <include name="browserInitialize"/>
+          <include name="signup"/>
+        </methods>
+      </class> <!-- testCase.ExpediaSignup -->
+    </classes>
+  </test> <!-- ExpediaSignup(failed) -->
+</suite> <!-- Failed suite [ExpediaFrameWork] -->

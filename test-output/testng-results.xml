@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="40" started-at="2019-06-22T14:20:26Z" finished-at="2019-06-22T14:20:26Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="40" started-at="2019-06-22T14:20:26Z" finished-at="2019-06-22T14:20:26Z">
+      <class name="testCase.ExpediaSignup">
+        <test-method status="FAIL" signature="browserInitialize(java.lang.String, java.lang.String)[pri:0, instance:testCase.ExpediaSignup@29ee9faa]" name="browserInitialize" is-config="true" duration-ms="0" started-at="2019-06-22T07:20:26Z" finished-at="2019-06-22T07:20:26Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'url' is required by @Configuration on method browserInitialize but has not been marked @Optional or defined
+in C:\Users\shahadat\workspace\ExpediaMdFramework\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'url' is required by @Configuration on method browserInitialize but has not been marked @Optional or defined
+in C:\Users\shahadat\workspace\ExpediaMdFramework\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialize -->
+        <test-method status="SKIP" signature="signup()[pri:0, instance:testCase.ExpediaSignup@29ee9faa]" name="signup" duration-ms="7" started-at="2019-06-22T07:20:26Z" finished-at="2019-06-22T07:20:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:testCase.ExpediaSignup@29ee9faa]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-06-22T07:20:26Z" finished-at="2019-06-22T07:20:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testCase.ExpediaSignup -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
